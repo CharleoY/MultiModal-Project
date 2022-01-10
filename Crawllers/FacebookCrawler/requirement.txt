@@ -1,0 +1,8 @@
+pymongo
+bs4
+tqdm
+pandas
+requests
+pymysql
+langdetect
+lxml
