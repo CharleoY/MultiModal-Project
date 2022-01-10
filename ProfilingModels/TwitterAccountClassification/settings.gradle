@@ -1,0 +1,10 @@
+rootProject.name = 'TwitterAccountClassification'
+
+include 'DataExtraction'
+
+include 'Algorithm'
+
+include 'Domain'
+
+include 'Demo'
+

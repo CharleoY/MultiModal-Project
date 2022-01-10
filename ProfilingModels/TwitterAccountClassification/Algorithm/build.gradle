@@ -1,0 +1,31 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'org.reflections:reflections:0.9.9'
+    compile 'org.xerial:sqlite-jdbc:3.7.2'
+    compile 'org.twitter4j:twitter4j-core:4.0.+'
+
+    compile 'nz.ac.waikato.cms.weka:weka-dev:3.7.12'
+    compile 'nz.ac.waikato.cms.weka:LibSVM:1.0.4'
+    compile 'nz.ac.waikato.cms.weka:attributeSelectionSearchMethods:1.0.7'
+    compile 'nz.ac.waikato.cms.weka:consistencySubsetEval:1.0.4'
+    compile 'nz.ac.waikato.cms.weka:fastCorrBasedFS:1.0.2'
+    compile 'nz.ac.waikato.cms.weka:linearForwardSelection:1.0.2'
+    compile 'nz.ac.waikato.cms.weka:probabilisticSignificanceAE:1.0.2'
+    compile 'nz.ac.waikato.cms.weka:tabuAndScatterSearch:1.0.2'
+    compile 'nz.ac.waikato.cms.weka:latentSemanticAnalysis:1.0.2'
+
+    compile 'org.languagetool:language-ru:2.9'
+    compile 'org.languagetool:language-en:2.9'
+
+    compile 'org.apache.opennlp:opennlp-tools:1.5.3'
+    compile 'org.apache.opennlp:opennlp-uima:1.5.3'
+    compile 'org.apache.opennlp:opennlp-maxent:3.0.3'
+
+    compile project(':Domain')
+}
